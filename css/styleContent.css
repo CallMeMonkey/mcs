@@ -1,0 +1,563 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    background-color: #F2F2F2;
+    /*height: 100vh;*/
+    font-family: PingFang SC,Helvetica Neue,Helvetica,Microsoft YaHei,\\5FAE\8F6F\96C5\9ED1,Arial,sans-serif;
+}
+
+/*通用样式*/
+.floatLeft {
+    float: left;
+}
+.floatRight {
+    float: right;
+}
+
+/*Head style*/
+.head {
+    width: 100%;
+    height: 100px;
+    background-color: #294072;
+    color: white;
+    line-height: 100px;
+    position: fixed;
+    top: 0;
+}
+.head i {
+    margin: 0 20px;
+}
+.head a:link, .head a:visited, .head a:active{
+    color: white;
+}
+
+/*Sidebar style*/
+.sidebar {
+    margin-top: 100px;
+    width: 249px;
+    height: 100%;
+    border-right: solid 1px #dfdfdf;
+    position: fixed;
+}
+.sidebar li {
+    height: 50px;
+    line-height: 50px;
+    color: #454e62;
+    border-bottom: solid 1px #dfdfdf;
+    list-style: none;
+    cursor: pointer;
+}
+.sidebar li:hover {
+    background-color: #dfdfdf;
+}
+
+.sidebar i {
+    line-height: 50px;
+    margin: 0 15px;
+}
+.sidebar .footer {
+    position: fixed;
+    width: 249px;
+    left: 0;
+    bottom: 20px;
+    color: #1C2B4A;
+    text-align: center;
+}
+
+/*Content style*/
+.content {
+    width: calc(100% - 300px);
+    padding: 25px;
+    /*margin: 100px 0 0 250px;*/
+    overflow-x: scroll;
+    overflow-y: scroll;
+    margin-top: 100px;
+    height: calc(100% - 150px);
+}
+
+.content_welcome {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.invite {
+    color: #454e62;
+}
+
+.invite h2, .invite h3 {
+    margin-bottom: 30px;
+}
+.invite ul {
+    list-style: none;
+}
+.invite li {
+    padding: 9px;
+    border: 1px solid #DDDDDD;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    width: 250px;
+}
+.invite li > label {
+    float: left;
+    margin-top: -19px;
+    height: 14px;
+    font-size: 14px;
+    color: #B9B9B9;
+    background-color: #F2F2F2;
+    /*overflow: hidden;*/
+}
+.invite input[type="date"] {
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.invite .btn {
+    display: inline-block;
+    height: 30px;
+    border: none;
+    background: #0C6;
+    width: 100px;
+    outline: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #eee;
+    border-bottom: solid 3px #093;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.inviteVideo {
+    display: inline-block;
+    vertical-align: top;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 0 3px 3px 0;
+    border: none;
+    outline: none;
+    width: calc(100% - 41px);
+}
+
+.inviteVideo input[type=radio] {
+    /* Hide original inputs */
+    visibility: hidden;
+    position: absolute;
+}
+
+.inviteVideo input[type=radio] + label:before {
+    height: 12px;
+    width: 12px;
+    margin-right: 5px;
+    content: " ";
+    display: inline-block;
+    vertical-align: baseline;
+    border: 1px solid #0C6;
+}
+
+.inviteVideo input[type=radio]:checked + label:before {
+    background: #0C6;
+}
+
+/* CUSTOM RADIO AND CHECKBOX STYLES */
+.inviteVideo input[type=radio] + label:before {
+    border-radius: 100%;
+}
+
+/*浏览所有用户样式 bu*/
+.bu {
+    color: #454e62;
+}
+.bu h2, bu h3 {
+    margin-bottom: 30px;
+}
+.bu table {
+    padding: 0;
+    text-align: left;
+    font-size: 14px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+.bu tr:first-child {
+    background-color: #dfdfdf;
+}
+.bu tr {
+    border: 1px solid #dfdfdf;
+}
+.bu th {
+    width: 150px;
+}
+.bu th:nth-child(1) {
+    width: 40px;
+}
+.bu tr:hover {
+    background-color: #dfdfdf;
+}
+
+/*创建新病例样式 create*/
+.create {
+    color: #454e62;
+}
+
+.create h2, .create h3 {
+    margin-bottom: 30px;
+}
+.create i {
+    margin: 0 5px;
+    line-height: 25px;
+}
+.create ul {
+    list-style: none;
+}
+.create li {
+    padding: 9px;
+    border: 1px solid #DDDDDD;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    width: 300px;
+    background-color: white;
+}
+.create li > label {
+    float: left;
+    margin-top: -19px;
+    height: 14px;
+    font-size: 14px;
+    color: #B9B9B9;
+    background-color: #F2F2F2;
+    /*overflow: hidden;*/
+}
+.create input[type="text"],
+.create input[type="date"],
+.create textarea {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    /*background-color: #F2F2F2;*/
+    font-size: 16px;
+}
+
+.create textarea {
+    resize: none;
+    height: 20px;
+}
+
+.create .btn {
+    height: 30px;
+    border: none;
+    background: #0C6;
+    width: 300px;
+    outline: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #eee;
+    border-bottom: solid 3px #093;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 10px 20px 10px;
+}
+.create .add_text_title {
+    float: left;
+    margin-top: -19px;
+    height: 15px;
+    font-size: 14px;
+    color: #B9B9B9;
+    background-color: #F2F2F2;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+.create .picLabel {
+    background-color: orange;
+    font-size: 14px;
+    height: 20px;
+    width: 200px;
+    text-align: center;
+    margin: 10px 55px;
+    border-radius: 3px;
+    border-bottom: solid 3px #cc6600;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+/* 创建病历输入样式 createInp */
+.createInp {
+  width: 100%;
+  height: 110px;
+  overflow: hidden;
+  position: relative;
+}
+
+.createInp label {
+  position: absolute;
+  top: 36.6666666667px;
+  color: #333;
+  cursor: text;
+  transition: .25s ease;
+  font: 400 36.6666666667px Roboto;
+}
+
+.createInp input {
+  display: block;
+  width: 100%;
+  padding-top: 36.6666666667px;
+  border: none;
+  border-radius: 0;
+  color: #333;
+  background: #F2F2F2;
+  font-size: 36.6666666667px;
+  transition: .3s ease;
+}
+.createInp input:valid ~ label {
+  top: 0;
+  color: #333;
+}
+.createInp input:focus {
+  outline: none;
+}
+.createInp input:focus ~ label {
+  top: 0;
+  color: #2196f3;
+}
+.createInp input:focus ~ .bar:before {
+  transform: translateX(0);
+}
+.createInp input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #333 inset;
+  -webkit-text-fill-color: #F2F2F2 !important;
+}
+
+.createInp .bar {
+  background: #333;
+  content: '';
+  width: 550px;
+  height: 3.6666666667px;
+  transition: .3s ease;
+  position: relative;
+}
+.createInp .bar:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 150%;
+  background: #2196f3;
+  transform: translateX(-100%);
+}
+
+::selection {
+  background: rgba(33, 150, 243, 0.3);
+}
+
+/* 浏览所有病例样式 bp */
+.bp {
+    color: #454e62;
+    overflow: scroll;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #4CAF50;
+}
+.bp h2, bp h3 {
+    margin-bottom: 30px;
+}
+.bp_search {
+    width: 1400px;
+    font-size: 16px;
+    padding: 10px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+.bp table {
+    padding: 0;
+    text-align: left;
+    font-size: 16px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 1400px;
+}
+.bp tr:nth-child(odd) {
+    background-color: #ededed;
+}
+.bp tr:first-child {
+    background-color: #4CAF50;
+    color: white;
+}
+.bp tr {
+    border: 1px solid #dfdfdf;
+    height: 35px;
+}
+.bp th {
+    width: 120px;
+}
+.bp th:nth-child(1) {
+    width: 40px;
+}
+.bp tr:hover {
+    background-color: #bfd3ff;
+}
+.bp .detailBtn {
+    border: none;
+    background: #0C6;
+    width: 80px;
+    height: 24px;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: #eee;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+/* 详细病例信息 pd */
+.pd {
+    color: #454e62;
+}
+.pd h2 {
+    text-align: center;
+}
+.pd h3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.pd .pdfBlock {
+    width: 100%;
+    height: 500px;
+}
+.pd .imgBlock {
+    width: 100%;
+}
+.imgBlock img {
+    width: 100%;
+    height: 100%;
+}
+.pd .row {
+    margin: 10px 0;
+}
+.pd .item {
+    display: inline-block;
+    width: 25%;
+    text-align: left;
+}
+.pd .text {
+    padding: 1%;
+    width: 98%;
+    border-radius: 3px;
+    border: 1px solid #DDDDDD;
+    margin-bottom: 20px;
+}
+.pd i {
+    margin: 0 10px;
+}
+.row label {
+    float: left;
+    margin: -11px 0 0 50px;
+    height: 16px;
+    font-size: 16px;
+    color: #17233B;
+    background-color: #F2F2F2;
+    font-weight: bold;
+}
+.pd .header {
+    width: 100%;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    margin: 30px 0 10px 0;
+}
+.pd .header > div {
+    width: 20%;
+    text-align: center;
+    display: inline-block;
+}
+
+.pd .btCenter {
+    text-align: center;
+}
+
+.pd .btline {
+    width: 25%;
+    text-align: center;
+    margin: 30px 0 10px 0;
+    display: inline-block;
+}
+.pd .generatePDF {
+    width: 200px;
+    height: 35px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: #eee;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+.pd .greenBorder {
+    background: #0C6;
+    border-bottom: solid 3px #093;
+}
+.pd .redBorder {
+    background: #ff0000;
+    border-bottom: solid 3px #7c0000;
+}
+
+/* 生成PDF样式 */
+.pdfContent {
+    width: 100%;
+}
+
+/* 搜索导出样式 */
+.search {
+    display: block;
+}
+.search select {
+    width: 300px;
+    height: 50px;
+}
+
+/* 修改病历样式 edit */
+.editFooter {
+    position: fixed;
+    width: calc(100% - 270px);
+    height: 30px;
+    bottom: 0;
+    right: 0;
+    background-color: #535886;
+    opacity: .8;
+    text-align: center;
+    line-height: 30px;
+    padding: 10px;
+}
+
+.editFooter .fb {
+    width: 200px;
+    height: 35px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: #eee;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+.editFooter .fbGreen {
+    background: #0C6;
+    border-bottom: solid 3px #093;
+}
+.editFooter .fbRed {
+    background: #ff0000;
+    border-bottom: solid 3px #7c0000;
+}
