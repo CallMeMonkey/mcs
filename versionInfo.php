@@ -15,6 +15,13 @@ require 'header/checkAuth.php';
 <?php require 'component/head.php' ?>
 <?php require 'component/sidebar.php' ?>
 <div class="content floatRight" style="color: #454e62;">
+    <!--3.4-->
+    <h3><i class="fas fa-info-circle" style="margin-right: 10px;"></i>版本：3.4</h3>
+    <ul style="margin: 10px;">
+        <li>添加功能：云端同步更新</li>
+        <li>备份代码到Github</li>
+        <li>添加功能：Linux版本支持</li>
+    </ul>
     <!--3.3.3-->
     <h3><i class="fas fa-info-circle" style="margin-right: 10px;"></i>版本：3.3.3</h3>
     <ul style="margin: 10px;">
