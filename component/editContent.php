@@ -9,7 +9,7 @@ require 'header/connect.php';
 require 'data/columnData.php';
 
 ?>
-    <div class="content floatRight">
+    <div class="content floatRight" id="content">
         <div class="create">
             <h2>修改病历</h2>
             <h3><i class="fas fa-id-card-alt floatLeft"></i>请修改下列通用信息</h3>
@@ -23,7 +23,7 @@ require 'data/columnData.php';
                         for ($i = 0; $i <= 43; $i++) {
                             echo "<li><label>" . $itemTitle[$i] . "</label>";
                             if ($i <= 19) {
-                                if ($i == 1)
+                                if ($i == 1 || $i == 10 || $i == 19)
                                     echo "<input type='date' name='" . $itemName[$i] . "' value='" . $rowEdit[$itemName[$i]] . "' /></li>";
                                 else
                                     echo "<input type='text' name='" . $itemName[$i] . "' value='" . $rowEdit[$itemName[$i]] . "' /></li>";
@@ -49,7 +49,7 @@ require 'data/columnData.php';
                         <label>宫腔镜检查</label>
                         <textarea type="text" name="p_inspect" placeholder=">" onkeyup="addition_adjust(this)"></textarea>
                     </li> -->
-                    <input type="hidden" name="editPatient" value="<?php echo $_POST['editPatient']; ?>" />
+                    <input type="hidden" name="editPatient" value="<?php echo $_POST['editPatient']; ?>"/>
                 </ul>
             </form>
         </div>
@@ -70,13 +70,14 @@ require 'data/columnData.php';
             if (textarea[i].scrollHeight >= 20)
                 textarea[i].style.height = textarea[i].scrollHeight + "px";
         }
+
         function editConfirm() {
             if (confirm('确认修改此病历？')) {
                 document.editForm.submit();
             }
         }
     </script>
-
+    <script src="js/contentScrollbar.js"></script>
 <?php
 $conn->close();
 ?>

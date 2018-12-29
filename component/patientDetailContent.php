@@ -6,10 +6,10 @@
  * Time: 1:17 PM
  */
 require 'header/connect.php';
-$patient = $_GET["passPatient"];
+$patient = $_POST["passPatient"];
 //echo $_SESSION['permissionType'];
 ?>
-<div class="content floatRight">
+<div class="content floatRight" id="content">
     <div class="pd">
         <h2>生殖中心电子病历</h2>
         <?php
@@ -144,3 +144,4 @@ $patient = $_GET["passPatient"];
         ?>
     </div>
 </div>
+<script src="js/contentScrollbar.js"></script>

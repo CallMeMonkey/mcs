@@ -14,7 +14,14 @@ require 'header/checkAuth.php';
 <body>
 <?php require 'component/head.php' ?>
 <?php require 'component/sidebar.php' ?>
-<div class="content floatRight" style="color: #454e62;">
+<div class="content floatRight" style="color: #454e62;" id="content">
+    <!--3.4.1-->
+    <h3><i class="fas fa-info-circle" style="margin-right: 10px;"></i>版本：3.4.1</h3>
+    <ul style="margin: 10px;">
+        <li>优化后台代码</li>
+        <li>修复一些显示错误</li>
+        <li>修复修改用户病历返回错误</li>
+    </ul>
     <!--3.4-->
     <h3><i class="fas fa-info-circle" style="margin-right: 10px;"></i>版本：3.4</h3>
     <ul style="margin: 10px;">
@@ -55,5 +62,6 @@ require 'header/checkAuth.php';
         <li>更新功能：归纳导出 *测试中*</li>
     </ul>
 </div>
+<script src="js/contentScrollbar.js"></script>
 </body>
 </html>

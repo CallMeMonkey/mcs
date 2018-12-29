@@ -46,7 +46,7 @@ $getAllPatient = $conn->query($patientSQL);
                 echo "<td>" . $row["m_name"] . "</td>";
                 echo "<td>" . $row["m_age"] . "</td>";
                 echo "<td>" . $row["m_tel"] . "</td>";
-                echo "<td><form method='get' action='patientDetail.php'>";
+                echo "<td><form method='post' action='patientDetail.php'>";
                 echo "<input value='" . $row["patient_id"] . "' type='hidden' name='passPatient' />";
                 echo "<input class='detailBtn' type='submit' value='详情'/>";
                 echo "</form></td>";
