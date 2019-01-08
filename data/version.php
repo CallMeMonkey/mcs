@@ -5,4 +5,6 @@
  * Date: 12/17/2018
  * Time: 10:10
  */
-$version = "内测版本 3.4.1";
+$versionText = "内测版本";
+$versionNumber = "3.4.2";
+$version = $versionText . " " . $versionNumber;

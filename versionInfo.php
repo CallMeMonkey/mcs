@@ -15,6 +15,13 @@ require 'header/checkAuth.php';
 <?php require 'component/head.php' ?>
 <?php require 'component/sidebar.php' ?>
 <div class="content floatRight" style="color: #454e62;" id="content">
+    <!--3.4.2-->
+    <h3><i class="fas fa-info-circle" style="margin-right: 10px;"></i>版本：3.4.2</h3>
+    <ul style="margin: 10px;">
+        <li>修改数据备份后台功能</li>
+        <li>优化版本更新信息</li>
+        <li>更新系统初始化数据库</li>
+    </ul>
     <!--3.4.1-->
     <h3><i class="fas fa-info-circle" style="margin-right: 10px;"></i>版本：3.4.1</h3>
     <ul style="margin: 10px;">

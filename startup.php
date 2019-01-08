@@ -135,6 +135,13 @@ $create_info_doc = "CREATE TABLE info_doc(
     doc_address VARCHAR(255) NOT NULL,
     PRIMARY KEY ( doc_id )
  )";
+$create_info_backup = "CREATE TABLE info_backup(
+  backup_id INT NOT NULL AUTO_INCREMENT,
+  backup_admin INT NOT NULL,
+  backup_date INT NOT NULL,
+  backup_version VARCHAR(255) NOT NULL,
+  PRIMARY KEY ( backup_id )
+)";
 
 if ($conn->query($create_admin_info) === TRUE &&
 $conn->query($create_user_info) === TRUE &&
