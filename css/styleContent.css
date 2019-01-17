@@ -563,3 +563,24 @@ body {
     background: #ff0000;
     border-bottom: solid 3px #7c0000;
 }
+
+/* 备份与还原样式backup style*/
+.backup {
+    color: #454e62;
+}
+.backup h2, .backup h3 {
+    margin-bottom: 30px;
+}
+.backup .bt {
+    border: none;
+    background: #0C6;
+    width: 80px;
+    height: 24px;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: #eee;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 10px;
+}

@@ -28,8 +28,8 @@ require 'data/version.php';
             echo "<li onclick=\"window.location.href='invite.php'\">
             <i class=\"fa fa-users floatLeft\"></i><h4 class=\"floatLeft\">邀请新用户</h4>
         </li>";
-            echo "<li>
-            <i class=\"fas fa-database floatLeft\"></i><h4 class=\"floatLeft\">数据备份</h4>
+            echo "<li onclick=\"window.location.href='backup.php'\">
+            <i class=\"fas fa-database floatLeft\"></i><h4 class=\"floatLeft\">数据备份与还原</h4>
         </li>";
             echo "<li>
             <i class=\"fas fa-shield-alt floatLeft\"></i><h4 class=\"floatLeft\">系统监控</h4>

@@ -150,7 +150,8 @@ $conn->query($create_inv_code) === TRUE &&
 $conn->query($create_patient_info) === TRUE &&
 $conn->query($create_info_addition) === TRUE &&
 $conn->query($create_info_image) === TRUE &&
-$conn->query($create_info_doc) === TRUE) {
+$conn->query($create_info_doc) === TRUE &&
+    $conn->query($create_info_backup) === TRUE) {
     echo "数据表创建成功！" . "<br>";
 } else {
     echo "数据表创建出错：" . $conn->error;
