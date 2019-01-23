@@ -8,8 +8,7 @@
 require '../header/connect.php';
 require '../data/version.php';
 
-$tableName = array("info_addition", "info_admin", "info_backup", "info_doc", "info_image", "info_patient", "info_user",
-    "info_visitor", "inv_code");
+require '../data/tableData.php';
 
 $t = time();
 //Backup path for Windows
