@@ -107,6 +107,7 @@ $patient = $_POST["passPatient"];
             while ($rowText = $textResult->fetch_assoc()) {
                 echo "<h4><i class=\"fas fa-list-ol\"></i>" . $textCount . "</h4>";
                 echo "<div class='row'><label>" . $rowText["addition_title"] . "</label><div class='text'>" . $rowText['addition_content'] . "</div></div>";
+                $textCount++;
             }
         }
         ?>

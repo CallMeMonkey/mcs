@@ -36,10 +36,8 @@ function showUser(str) {
         <select onchange="showUser(this.value)">
             <option value="">请选择：</option>
             <?php
-            $sqlSelect = "SHOW COLUMNS FROM info_patient";
-            $resultSelect = $conn->query($sqlSelect);
-            while ($rowSelect = $resultSelect->fetch_assoc()) {
-                echo "<option value='" . $rowSelect['Field'] . "'>" . $rowSelect['Field'] . "</option>";
+            for ($i = 0; $i <= 43; $i++) {
+                echo "<option value='" . $itemName[$i] . "'>" . $itemTitle[$i] . "</option>";
             }
             ?>
         </select>
