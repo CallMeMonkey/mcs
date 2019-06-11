@@ -6,5 +6,5 @@
  * Time: 10:10
  */
 $versionText = "内测版本";
-$versionNumber = "3.4.7";
+$versionNumber = "3.4.10";
 $version = $versionText . " " . $versionNumber;

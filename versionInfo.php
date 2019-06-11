@@ -15,6 +15,22 @@ require 'header/checkAuth.php';
 <?php require 'component/head.php' ?>
 <?php require 'component/sidebar.php' ?>
 <div class="content floatRight" style="color: #454e62;" id="content">
+    <!--3.4.10-->
+    <h3><i class="fas fa-info-circle" style="margin-right: 10px;"></i>版本：3.4.10</h3>
+    <ul style="margin: 10px;">
+        <li>更新归纳功能</li>
+    </ul>
+    <!--3.4.9-->
+    <h3><i class="fas fa-info-circle" style="margin-right: 10px;"></i>版本：3.4.9</h3>
+    <ul style="margin: 10px;">
+        <li>修复显示错误</li>
+        <li>更新系统配置</li>
+    </ul>
+    <!--3.4.8-->
+    <h3><i class="fas fa-info-circle" style="margin-right: 10px;"></i>版本：3.4.8</h3>
+    <ul style="margin: 10px;">
+        <li>优化后台代码</li>
+    </ul>
     <!--3.4.7-->
     <h3><i class="fas fa-info-circle" style="margin-right: 10px;"></i>版本：3.4.7</h3>
     <ul style="margin: 10px;">
